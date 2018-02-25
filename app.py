@@ -53,3 +53,5 @@ def last(final=None):
 		return render_template('yes_final.html', variable=code)
 	else:
 		return abort(404)
+if __name__ == '__main__':
+    app.run(threaded=True, host='0.0.0.0',port=8080,debug=True)
